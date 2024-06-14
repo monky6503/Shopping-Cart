@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto";
+  margin: 0;
+  padding: 0;
+}
+body p {
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+}
+
+main .container .row a span {
+  color: #0065CC;
+  position: relative;
+}
+main .container .row a span::after {
+  content: ">";
+  position: absolute;
+  left: 105%;
+}
+main .container .row a span:hover {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+main .container .puzzle img {
+  width: 100%;
+  border-radius: 4px;
+}
+main .container .price-table table {
+  width: 80%;
+  text-align: center;
+}
+main .container .price-table table tr {
+  padding: 0 10px;
+}
+main .container .six-card .card {
+  border: none;
+}
+main .container .product-list button {
+  border: none;
+}
+main .container .product-list .space-gray {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(180deg, #3D3D3A, #3D3D3A 50%, #595759 51%);
+  border-radius: 50%;
+}
+main .container .product-list .pink {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(180deg, #E4544D, #E4544D 50%, #D8A097 51%);
+  border-radius: 50%;
+}
+main .container .product-list .green {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(180deg, #E7ECE3, #E7ECE3 50%, #AFBFAB 51%);
+  border-radius: 50%;
+}
+main .container .product-list .silver {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(180deg, #F5F4F0, #F5F4F0 50%, #D2D3D4 51%);
+  border-radius: 50%;
+}
+main .container .product-list .sky-blue {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(180deg, #2F506C, #2F506C 50%, #91A6BB 51%);
+  border-radius: 50%;
+}
+main .container .product-list .eight-card .card {
+  border: none;
+}
+main .container-full {
+  position: relative;
+  height: 700px;
+}
+main .container-full iframe {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+main .container-full .feedback {
+  position: absolute;
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0.1875rem 0.4375rem 0 rgba(0, 0, 0, 0.13), 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.11);
+  left: 60%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+main .container-full .feedback form {
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  main .container-full .feedback {
+    width: 30%;
+  }
+}
+@media (max-width: 1200px) {
+  main .container-full .feedback {
+    left: 50%;
+    width: 40%;
+  }
+}
+@media (max-width: 992px) {
+  main .container-full .feedback {
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 768px) {
+  main .container-full .feedback {
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 576px) {
+  main .container-full .feedback {
+    width: 90%;
+  }
+}
+@media (max-width: 758px) {
+  main .container .price-table table {
+    width: 100%;
+    word-break: break-all;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=購物車首頁.css.map */

@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/購物車.css">
+  <link rel="stylesheet" href="./css/購物車首頁.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container px-5 py-0">
+      <a class="navbar-brand" href="./購物車首頁.html">
+        <i class="bi bi-apple fs-5"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mx-auto d-flex align-items-center  justify-content-start ">
+          <li class="nav-item me-lg-4 me-xxl-5 flex-shrink-0">
+            <a class="nav-link" href="#">商店</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">Mac</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">iPad</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">iPhone</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">Watch</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">AirPods</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">TV&Home</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">Entertainment</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">Accessories</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <div class="d-flex">
+            <li class="nav-item me-3">
+              <a class="nav-link" href="./確認購物車.html"><img class="pic" src="./image/svgexport-2.svg" alt=""></a>
+            </li>
+            <li class="nav-item dropdown position-relative">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <img class="pic" src="./image/svgexport-3.svg" alt="">
+              </a>
+              <ul class="dropdown-menu position-absolute" id="my-menu">
+                <li><a class="dropdown-item" href="./登入頁面.html">Login</a></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active pic w-100">
+          <img src="./image/carousel/iphone-15-pro-page.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item pic w-100">
+          <img src="./image/carousel/ipad-pro-page.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item pic w-100">
+          <img src="./image/carousel/ipad-air-page.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="px-lg-5 py-4">
+        <h2 class="text-center">Here’s what we announced.</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/six-card/apple-intelligence.jpeg" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Apple Intelligence</h5>
+                <p class="card-text">The next big step for Apple is here. Apple Intelligence is personal intelligence
+                  built into your devices to help you write, express yourself, and get things done effortlessly, every
+                  day. All while setting a brand-new standard for privacy in AI.
+                </p>
+                <div class="mt-3">
+                  <a href="#" class=""><span>Explore the preview</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/six-card/ios-18.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">iOS 18</h5>
+                <p class="card-text">Customize your iPhone in more ways than ever, stay connected with friends and
+                  family, and relive your favorite moments. And with Apple Intelligence, the things you do every day
+                  become even more magical.
+                </p>
+                <div class="mt-3">
+                  <a href="#" class=""><span>Explore the preview</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/six-card/ipad-os.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">iPadOS 18</h5>
+                <p class="card-text">Explore new ways to work with Apple Pencil, experience more responsive apps, and
+                  customize iPad even further. And bring your ideas to life like never before with Apple Intelligence.
+                </p>
+                <div class="mt-3">
+                  <a href="#" class=""><span>Explore the preview</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/six-card/mac-os.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">macOS Sequoia</h5>
+                <p class="card-text">Lay out your workspace on the fly, browse the web with focus, and even mirror
+                  iPhone wirelessly. And Apple Intelligence helps you simplify and accelerate tasks big and small.
+                </p>
+                <div class="mt-3">
+                  <a href="#" class=""><span>Explore the preview</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/six-card/watch-os.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">watchOS 11</h5>
+                <p class="card-text">Get a better understanding of your daily health status using your overnight vitals.
+                  See how workouts impact your body over time. And discover new features that make Apple Watch even more
+                  finely tuned to you.
+                </p>
+                <div class="mt-3">
+                  <a href="#" class=""><span>Explore the preview</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/six-card/vision-os.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">visionOS 2</h5>
+                <p class="card-text">Relive and share photos in magical new ways. Immerse yourself in entertainment and
+                  work. Navigate easily with new gestures. The ground­breaking experiences of Apple Vision Pro go even
+                  further.
+                </p>
+                <div class="mt-3">
+                  <a href="#" class=""><span>Explore the preview</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row puzzle px-lg-5 py-4">
+        <h2>Store. The best way to buy the products you love.</h2>
+        <div class="col-6 p-3">
+          <div class="row">
+            <div class="col-6 p-1">
+              <img src="./image/puzzle/iphone15.jpeg" alt="">
+            </div>
+            <div class="col-6 p-1">
+              <img src="./image/puzzle/mba13.jpeg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 p-1">
+              <img src="./image/puzzle/watch.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-6 p-3">
+          <div class="row">
+            <div class="col-12 p-1">
+              <img src="./image/puzzle/airpodspro.jpeg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 p-1">
+              <img src="./image/puzzle/homepod_mini.jpeg" alt="">
+            </div>
+            <div class="col-6 p-1">
+              <img src="./image/puzzle/tradein.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="price-table d-flex flex-column align-items-center px-lg-5 py-4">
+        <h2 class="text-center">Price</h2>
+        <table class="table mt-3">
+          <thead class="table-secondary">
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Inch</th>
+              <th scope="col">Memory</th>
+              <th scope="col">Storage</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Macbook Pro</td>
+              <td>14/16</td>
+              <td>8/16/18/24/36/48/64/96/128</td>
+              <td>512G/1TB/2TB/4TB/8TB</td>
+              <td>From $999.00</td>
+            </tr>
+            <tr>
+              <td>Macbook air</td>
+              <td>13/15</td>
+              <td>8/16/24</td>
+              <td>256G/512G/1TB/2TB</td>
+              <td>From $1,599.00</td>
+            </tr>
+            <tr>
+              <td>iPad Pro</td>
+              <td>11/13</td>
+              <td></td>
+              <td>256G/512G/1TB/2TB</td>
+              <td>From $9599.00</td>
+            </tr>
+            <tr>
+              <td>iPad Air</td>
+              <td>11/13</td>
+              <td></td>
+              <td>128G/256G/512G/1TB</td>
+              <td>From $599.00</td>
+            </tr>
+            <tr>
+              <td>iPhone 15 Pro</td>
+              <td>6.1/6.7</td>
+              <td></td>
+              <td>128G/256G/512G</td>
+              <td>From $999.00</td>
+            </tr>
+            <tr>
+              <td>iPhone 15</td>
+              <td>6.1/6.7</td>
+              <td></td>
+              <td>512G/1TB/2TB/4TB/8TB</td>
+              <td>From $799.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="four-card px-lg-5 py-4">
+        <h2>The latest. Take a look at what’s new, right now.</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4 py-4">
+          <div class="col">
+            <div class="card h-100 p-3">
+              <img src="./image/fourcard/iphone-15-pro.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">iPhone 15 Pro</h5>
+                <p class="card-text">From $999 or $41.62/mo.for 24 mo.*</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 p-3">
+              <img src="./image/fourcard/vision-pro.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Welcome to spatial computing</h5>
+                <p class="card-text">From $3499 or $291.58/mo.for 12 mo.*</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 p-3">
+              <img src="./image/fourcard/pride-watch.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Let your light shine.</h5>
+                <p class="card-text">$99.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 p-3">
+              <img src="./image/fourcard/apple-pencil.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Engineered for limitless creativity.</h5>
+                <p class="card-text">$129.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="six-card px-lg-5 py-4">
+        <div class="row row-cols-1 g-4">
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./image/six-card/apple-intelligence.jpeg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8 px-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Apple Intelligence</h5>
+                    <p class="card-text">The next big step for Apple is here. Apple Intelligence is personal
+                      intelligence
+                      built into your devices to help you write, express yourself, and get things done effortlessly,
+                      every
+                      day. All while setting a brand-new standard for privacy in AI.
+                    </p>
+                    <div class="mt-3">
+                      <a href="#" class=""><span>Explore the preview</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8 px-4">
+                  <div class="card-body">
+                    <h5 class="card-title">iOS 18</h5>
+                    <p class="card-text">Customize your iPhone in more ways than ever, stay connected with friends and
+                      family, and relive your favorite moments. And with Apple Intelligence, the things you do every day
+                      become even more magical.
+                    </p>
+                    <div class="mt-3">
+                      <a href="#" class=""><span>Explore the preview</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./image/six-card/ios-18.jpeg" class="img-fluid rounded-start" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./image/six-card/ipad-os.jpeg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8 px-4">
+                  <div class="card-body">
+                    <h5 class="card-title">iPadOS 18</h5>
+                    <p class="card-text">Explore new ways to work with Apple Pencil, experience more responsive apps,
+                      and
+                      customize iPad even further. And bring your ideas to life like never before with Apple
+                      Intelligence.</p>
+                    <div class="mt-3">
+                      <a href="#" class=""><span>Explore the preview</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8 px-4">
+                  <div class="card-body">
+                    <h5 class="card-title">macOS Sequoia</h5>
+                    <p class="card-text">Lay out your workspace on the fly, browse the web with focus, and even mirror
+                      iPhone wirelessly. And Apple Intelligence helps you simplify and accelerate tasks big and small.
+                    </p>
+                    <div class="mt-3">
+                      <a href="#" class=""><span>Explore the preview</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./image/six-card/mac-os.jpeg" class="img-fluid rounded-start" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./image/six-card/watch-os.jpeg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8 px-4">
+                  <div class="card-body">
+                    <h5 class="card-title">watchOS 11</h5>
+                    <p class="card-text">Get a better understanding of your daily health status using your overnight
+                      vitals.
+                      See how workouts impact your body over time. And discover new features that make Apple Watch even
+                      more
+                      finely tuned to you.</p>
+                    <div class="mt-3">
+                      <a href="#" class=""><span>Explore the preview</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8 px-4">
+                  <div class="card-body">
+                    <h5 class="card-title">visionOS 2</h5>
+                    <p class="card-text">Relive and share photos in magical new ways. Immerse yourself in entertainment
+                      and
+                      work. Navigate easily with new gestures. The ground­breaking experiences of Apple Vision Pro go
+                      even
+                      further.
+                    </p>
+                    <div class="mt-3">
+                      <a href="#" class=""><span>Explore the preview</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./image/six-card/vision-os.jpeg" class="img-fluid rounded-start" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="product-list w-100 px-lg-5 py-4">
+        <div class="card mb-3">
+          <div class="row g-0 p-0 m-0">
+            <div class="col-md-4 p-0 m-0">
+              <img src="./image/product-list/airpods-max-spacegray.png"
+                class="img-fluid w-100 ms-md-3 my-auto rounded-start airpod-max" alt="...">
+            </div>
+            <div class="col-md-8 px-0 px-sm-4 py-md-4">
+              <div class="card-body">
+                <p class="card-text"><small class=" text-body-secondary">Apple</small></p>
+                <h5 class="card-title">AirPods Max</h5>
+                <div class="card-text mb-2 d-flex align-items-center">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <p class="ms-3" style="font-size:12px;"> 47582 Reviews</p>
+                  <div class="vl mx-3" style="border-left: 1px solid rgb(203, 202, 202); ;height: 30px;"></div>
+                  <div>
+                    <i class="bi bi-facebook me-1"></i>
+                    <i class="bi bi-telegram me-1"></i>
+                    <i class="bi bi-whatsapp me-1"></i>
+                  </div>
+                </div>
+                <p class="card-text" style="font-size:14px;">Introducing AirPods Max — a perfect balance of exhilarating
+                  high-fidelity audio and the effortless magic of AirPods. The ultimate personal listening experience is
+                  here.
+                  The over-ear headphone has been completely reimagined. From cushion to canopy, AirPods Max are
+                  designed for an uncompromising fit that creates the optimal acoustic seal for many different head
+                  shapes — fully immersing you in every sound.
+                </p>
+                <div class="card-text d-flex pt-4 justify-content-start align-items-center flex-wrap row-gap-2">
+                  <p class="me-2">Color:</p>
+                  <button class="space-gray me-2 flex-shrink-0"></button>
+                  <button class="pink me-2 flex-shrink-0"></button>
+                  <button class="green me-2 flex-shrink-0"></button>
+                  <button class="silver me-2 flex-shrink-0"></button>
+                  <button class="sky-blue me-4 flex-shrink-0"></button>
+                  <div class="d-flex justify-content-start align-items-center">
+                    <p class="me-2">Engraving:</p>
+                    <select class="form-select-sm w-100" aria-label="Default select example">
+                      <option selected>Select</option>
+                      <option value="Add Engraving">Add Engraving</option>
+                      <option value="No Engraving">No Engraving</option>
+                    </select>
+                  </div>
+                </div>
+                <hr>
+                <div class="row d-flex align-items-center">
+                  <div class="col-6">$549.00</div>
+                  <div class="col-6 d-flex  justify-content-end">
+                    <button type="button" class="btn btn-success">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eight-card row row-cols-1 row-cols-md-4 w-100 mx-auto  gx-5 gy-3">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/product-list/AidpodsPro.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><small class=" text-body-secondary">AirPods</small></p>
+                <h5 class="card-title">AirPods Pro (2nd generation) with Mag</h5>
+                <p class="card-text">$249.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/product-list/AirPods3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><small class=" text-body-secondary">AirPods</small></p>
+                <h5 class="card-title">AirPods (3rd generation) with Lightning Charging Case</h5>
+                <p class="card-text">$169.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/product-list/homepod.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><small class=" text-body-secondary">TV&Home</small></p>
+                <h5 class="card-title">HomePod-Midnight</h5>
+                <p class="card-text">$299.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/product-list/homepod-mini.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><small class=" text-body-secondary">TV&Home</small></p>
+                <h5 class="card-title">HomePod mini -Yellow</h5>
+                <p class="card-text">$99.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/product-list/beast-solo4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><small class=" text-body-secondary">Accessories</small></p>
+                <h5 class="card-title">Beats Solo 4 — On-Ear Wireless Headphones – Cloud Pink</h5>
+                <p class="card-text">$199.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/product-list/magickeyboard.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><small class=" text-body-secondary">iPad</small></p>
+                <h5 class="card-title">Magic Keyboard for iPad Pro 13‑inch (M4) - US English - Black</h5>
+                <p class="card-text">$349.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/product-list/applepencil-pro.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><small class=" text-body-secondary">Accessories</small></p>
+                <h5 class="card-title">Apple Pencil Pro</h5>
+                <p class="card-text">$129.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./image/product-list/airtag.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><small class=" text-body-secondary">Accessories</small></p>
+                <h5 class="card-title">AirTag</h5>
+                <p class="card-text">$29.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.644652631826!2d-122.01048124450486!3d37.333031901537304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5c5d7e7a3d1%3A0x1741de234d732f80!2sApple%20Apple%20Park%20Visitor%20Center!5e0!3m2!1szh-TW!2stw!4v1718203366473!5m2!1szh-TW!2stw"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div class="row w-100 m-0 p-0">
+        <div class="col-0 col-lg-6 m-0 p-0"></div>
+        <div class="col-12 col-lg-6 m-0 p-0">
+          <div class="feedback bg-white px-4 py-5  mx-auto ms-lg-auto">
+            <h4 class="text-body-secondary">Feedback</h4>
+            <p class="text-body-secondary">Apple
+              welcomes your feedback on its products.</p>
+            <form class="row g-3 py-2 m-0 text-body-secondary">
+              <div class="col-12 m-0 mb-2 p-0">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-12 m-0 mb-2 p-0">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+              </div>
+            </form>
+            <button type="button" class="btn btn-primary  w-100 mb-2">Submit</button>
+            <p class="text-body-secondary">Please read Apple’s Unsolicited Idea Submission Policy before you send us
+              your
+              feedback.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid bg-body-secondary p-0">
+    <div class="container-fluid bg-white">
+      <div class="row bg-white d-flex px-5">
+        <div class="col-12 col-sm-6 col-md-4 col-lg mt-5 mb-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">選購與了解產品</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">商店</li>
+                <li class="mb-2">Mac</li>
+                <li class="mb-2">iPad</li>
+                <li class="mb-2">iPhone</li>
+                <li class="mb-2">Watch</li>
+                <li class="mb-2">AirPods</li>
+                <li class="mb-2">TV與家庭</li>
+                <li class="mb-2">AirTag</li>
+                <li class="mb-2">配件</li>
+                <li class="mb-2">禮品卡</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">Apple 錢包</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">Apple Pay</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg mt-5 mb-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">帳戶</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">管理你的 Apple ID</li>
+                <li class="mb-2">Apple Store 帳戶</li>
+                <li class="mb-2">iCloud.com</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">娛樂</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">Apple One</li>
+                <li class="mb-2">Apple TV+</li>
+                <li class="mb-2">Apple Music</li>
+                <li class="mb-2">Apple Arcade</li>
+                <li class="mb-2">Apple Podcast</li>
+                <li class="mb-2">Apple Books</li>
+                <li class="mb-2">App Store</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg mt-5 mb-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">Apple Store</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">尋找直營店</li>
+                <li class="mb-2">Genius Bar 天才吧</li>
+                <li class="mb-2">Today at Apple</li>
+                <li class="mb-2">團體預約</li>
+                <li class="mb-2">Apple 夏令營</li>
+                <li class="mb-2">Apple Store App</li>
+                <li class="mb-2">認證整修品</li>
+                <li class="mb-2">Apple Trade In 換購方案</li>
+                <li class="mb-2">信用卡分期付款</li>
+                <li class="mb-2">訂單狀態</li>
+                <li class="mb-2">購物協助</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg mt-5 mb-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">商務應用</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">Apple與商務</li>
+                <li class="mb-2">商務選購</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">教育應用</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">Apple 與教育</li>
+                <li class="mb-2">大專校院師生選購</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg mt-5 mb-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">Apple 價值理念</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">輔助使用</li>
+                <li class="mb-2">環境</li>
+                <li class="mb-2">隱私權</li>
+                <li class="mb-2">供應鏈</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">關於 Apple</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">Newsroom</li>
+                <li class="mb-2">Apple 領導團隊</li>
+                <li class="mb-2">工作機會</li>
+                <li class="mb-2">商業倫理與法規遵循</li>
+                <li class="mb-2">活動</li>
+                <li class="mb-2">聯絡 Apple</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row bg-body-secondary justify-content-between align-items-center px-5 py-4">
+        <div class="col-12 col-md-6 fw-light d-flex align-items-center">
+          <p class="m-0 py-3">
+            Copyright
+            <i class="bi bi-c-circle"></i>
+            2024 Apple Inc. 保留一切權利。
+          </p>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-start justify-content-md-end">
+          <a href="https://www.facebook.com/apple/?locale=zh_TW" target="_blank"><img class="me-2"
+              src="./image/svgexport-4.svg" alt=""></a>
+          <a href="https://x.com/apple" target="_blank"><img class="me-2" src="./image/svgexport-5.svg" alt=""></a>
+          <a href="https://www.instagram.com/apple/" target="_blank"><img class="me-2" src="./image/svgexport-6.svg"
+              alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <script src="./js/購物車首頁.js"></script>
+</body>
+
+</html>

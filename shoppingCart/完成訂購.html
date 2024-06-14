@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart Step-4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/購物車.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container px-5 py-0">
+      <a class="navbar-brand" href="./購物車首頁.html">
+        <i class="bi bi-apple fs-5"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mx-auto d-flex align-items-center  justify-content-start ">
+          <li class="nav-item me-lg-4 me-xxl-5 flex-shrink-0">
+            <a class="nav-link" href="#">商店</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">Mac</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">iPad</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">iPhone</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">Watch</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">AirPods</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">TV&Home</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">Entertainment</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">Accessories</a>
+          </li>
+          <li class="nav-item me-lg-4 me-xxl-5">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <div class="d-flex">
+            <li class="nav-item me-3">
+              <a class="nav-link" href="./確認購物車.html"><img class="pic" src="./image/svgexport-2.svg" alt=""></a>
+            </li>
+            <li class="nav-item dropdown position-relative">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <img class="pic" src="./image/svgexport-3.svg" alt="">
+              </a>
+              <ul class="dropdown-menu position-absolute" id="my-menu">
+                <li><a class="dropdown-item" href="./登入頁面.html">Login</a></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid bg-dark-subtle px-0 px-md-5 py-5">
+    <div class="container-sm bg-body-tertiary mx-auto px-1 px-sm-5 py-5 shadow rounded-2">
+      <div class="row pb-4">
+        <h2>購物車</h2>
+        <div class="col-12 w-100 pt-3 pb-4 px-0">
+          <div class="row d-flex justify-content-between gx-4">
+            <div class="col-3 position-relative px-0">
+              <div class="step-box d-flex flex-column align-items-center">
+                <div
+                  class="step-1 rounded-circle bg-success text-white d-flex justify-content-center align-items-center">
+                  1</div>
+                <p>確認購物車</p>
+              </div>
+              <div class="progress-rate rounded-pill bg-body-secondary position-absolute">
+                <div class="progress-rate-sm bg-success rounded-pill" style="width:100%"></div>
+              </div>
+            </div>
+            <div class="col-3 position-relative px-0">
+              <div class="step-box d-flex flex-column align-items-center">
+                <div
+                  class="step-2 rounded-circle bg-success text-white d-flex justify-content-center align-items-center">2
+                </div>
+                <p>付款與運送方式</p>
+              </div>
+              <div class="progress-rate rounded-pill bg-body-secondary position-absolute">
+                <div class="progress-rate-sm bg-success rounded-pill" style="width:100%"></div>
+              </div>
+            </div>
+            <div class="col-3 position-relative px-0">
+              <div class="step-box d-flex flex-column align-items-center">
+                <div
+                  class="step-3 rounded-circle bg-success text-white d-flex justify-content-center align-items-center">3
+                </div>
+                <p>填寫資料</p>
+              </div>
+              <div class="progress-rate rounded-pill bg-body-secondary position-absolute">
+                <div class="progress-rate-sm bg-success rounded-pill" style="width:100%"></div>
+              </div>
+            </div>
+            <div class="col-3 px-0">
+              <div class="step-box d-flex flex-column align-items-center">
+                <div
+                  class="step-4 rounded-circle bg-success text-white d-flex justify-content-center align-items-center">4
+                </div>
+                <p>完成訂購</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="text-body-tertiary m-0">
+      </div>
+      <h2 class="text-center">訂單成立</h2>
+      <div class="row py-4">
+        <h4 class="fw-normal">訂單明細</h4>
+        <div class="col-12 w-100 py-2">
+          <div class="row  py-3">
+            <div class="col-6 product d-flex align-items-center">
+              <img class="rounded-circle me-1" src="./image/mbp14-spacegray-select-202310.jpeg" alt="">
+              <div>
+                <p class="name m-0">MacBook Pro 14 inch</p>
+                <p class="m-0 fw-light" style="font-size:12px">#41551</p>
+              </div>
+            </div>
+            <div class="col-6 total d-flex align-items-center justify-content-end gap-4">
+              <p>x 1</p>
+              <p class="m-0">NT$54,900</p>
+            </div>
+          </div>
+        </div>
+        <hr class="text-body-tertiary m-0">
+        <div class="col-12 w-100 py-2">
+          <div class="row py-3">
+            <div class="col-6 product d-flex align-items-center">
+              <img class="rounded-circle me-1" src="./image/ipad-pro-storage-select-202405-11inch-silver.jpeg" alt="">
+              <div>
+                <p class="name m-0">ipad Pro 11 inch</p>
+                <p class="m-0 fw-light" style="font-size:12px">#23981</p>
+              </div>
+            </div>
+            <div class="col-6 total d-flex align-items-center justify-content-end gap-4">
+              <p>x 1</p>
+              <p class="m-0">NT$34,900</p>
+            </div>
+          </div>
+        </div>
+        <hr class="text-body-tertiary m-0">
+        <div class="col-12 w-100 py-2">
+          <div class="row py-3">
+            <div class="col-6 product d-flex align-items-center">
+              <img class="rounded-circle me-1"
+                src="./image/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium.webp" alt="">
+              <div>
+                <p class="name m-0">iPhone 15 Pro</p>
+                <p class="m-0 fw-light" style="font-size:12px">#19382</p>
+              </div>
+            </div>
+            <div class="col-6 total d-flex align-items-center justify-content-end gap-4">
+              <p>x 1</p>
+              <p class="m-0">NT$36,900</p>
+            </div>
+          </div>
+        </div>
+        <hr class="text-body-tertiary m-0">
+      </div>
+      <div class="row d-flex flex-column">
+        <h4 class="fw-normal">收貨人資訊</h4>
+        <div class="d-flex col justify-content-start py-2 mb-2">
+          <span class="flex-shrink-0">姓名：</span>
+          <p>Tim Cook</p>
+        </div>
+        <div class="d-flex col justify-content-start py-2 mb-2">
+          <span class="flex-shrink-0">電話：</span>
+          <p>+1 408-996-1010</p>
+        </div>
+        <div class="d-flex col justify-content-start py-2 mb-2">
+          <span class="flex-shrink-0">E-mail：</span>
+          <p>tcook@apple.com</p>
+        </div>
+        <div class="d-flex col justify-content-start py-2 mb-2">
+          <span class="flex-shrink-0">地址：</span>
+          <p>10500 N De Anza Blvd, Cupertino, CA 95014美國</p>
+        </div>
+        <hr class="text-body-tertiary m-0">
+      </div>
+      <div class="row px-0 pt-4 d-flex flex-column align-items-end">
+        <div class="d-flex col col-md-4 col-lg-3 col-xl-2 justify-content-between mb-2">
+          <span>數量：</span>
+          <p class="fw-normal">3</p>
+        </div>
+        <div class="d-flex col col-md-4 col-lg-3 col-xl-2 justify-content-between mb-2">
+          <span>小計：</span>
+          <p class="fw-normal">NT$126,700</p>
+        </div>
+        <div class="d-flex col col-md-4 col-lg-3 col-xl-2 justify-content-between mb-2">
+          <span>運費：</span>
+          <p class="fw-normal">NT$0</p>
+        </div>
+        <div class="d-flex col col-md-4 col-lg-3 col-xl-2 justify-content-between pb-4">
+          <span>總計：</span>
+          <p class="fw-bold">NT$126,700</p>
+        </div>
+        <hr class="text-body-tertiary m-0">
+      </div>
+      <div
+        class="row d-flex d-sm-flex flex-column flex-sm-row align-items-center align-items-sm-center justify-content-end justify-content-sm-between pt-3">
+        <div class="col d-flex justify-content-center justify-content-sm-end"><a href="./購物車首頁.html"><button
+              type="button" class="btn btn-success px-5 py-2 mt-2 mt-sm-0">返回首頁</button></a></div>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid bg-body-secondary p-0">
+    <div class="container-fluid bg-white">
+      <div class="row bg-white d-flex px-5">
+        <div class="col-12 col-sm-6 col-md-4 col-lg mt-5 mb-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">選購與了解產品</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">商店</li>
+                <li class="mb-2">Mac</li>
+                <li class="mb-2">iPad</li>
+                <li class="mb-2">iPhone</li>
+                <li class="mb-2">Watch</li>
+                <li class="mb-2">AirPods</li>
+                <li class="mb-2">TV與家庭</li>
+                <li class="mb-2">AirTag</li>
+                <li class="mb-2">配件</li>
+                <li class="mb-2">禮品卡</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">Apple 錢包</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">Apple Pay</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg mt-5 mb-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">帳戶</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">管理你的 Apple ID</li>
+                <li class="mb-2">Apple Store 帳戶</li>
+                <li class="mb-2">iCloud.com</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">娛樂</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">Apple One</li>
+                <li class="mb-2">Apple TV+</li>
+                <li class="mb-2">Apple Music</li>
+                <li class="mb-2">Apple Arcade</li>
+                <li class="mb-2">Apple Podcast</li>
+                <li class="mb-2">Apple Books</li>
+                <li class="mb-2">App Store</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg mt-5 mb-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">Apple Store</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">尋找直營店</li>
+                <li class="mb-2">Genius Bar 天才吧</li>
+                <li class="mb-2">Today at Apple</li>
+                <li class="mb-2">團體預約</li>
+                <li class="mb-2">Apple 夏令營</li>
+                <li class="mb-2">Apple Store App</li>
+                <li class="mb-2">認證整修品</li>
+                <li class="mb-2">Apple Trade In 換購方案</li>
+                <li class="mb-2">信用卡分期付款</li>
+                <li class="mb-2">訂單狀態</li>
+                <li class="mb-2">購物協助</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg mt-5 mb-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">商務應用</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">Apple與商務</li>
+                <li class="mb-2">商務選購</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">教育應用</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">Apple 與教育</li>
+                <li class="mb-2">大專校院師生選購</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg mt-5 mb-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">Apple 價值理念</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">輔助使用</li>
+                <li class="mb-2">環境</li>
+                <li class="mb-2">隱私權</li>
+                <li class="mb-2">供應鏈</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-2" style="font-size:10px;">關於 Apple</p>
+              <ul class="list-unstyled text-secondary" style="font-size:10px;">
+                <li class="mb-2">Newsroom</li>
+                <li class="mb-2">Apple 領導團隊</li>
+                <li class="mb-2">工作機會</li>
+                <li class="mb-2">商業倫理與法規遵循</li>
+                <li class="mb-2">活動</li>
+                <li class="mb-2">聯絡 Apple</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row bg-body-secondary justify-content-between align-items-center px-5 py-4">
+        <div class="col-12 col-md-6 fw-light d-flex align-items-center">
+          <p class="m-0 py-3">
+            Copyright
+            <i class="bi bi-c-circle"></i>
+            2024 Apple Inc. 保留一切權利。
+          </p>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-start justify-content-md-end">
+          <a href="https://www.facebook.com/apple/?locale=zh_TW" target="_blank"><img class="me-2"
+              src="./image/svgexport-4.svg" alt=""></a>
+          <a href="https://x.com/apple" target="_blank"><img class="me-2" src="./image/svgexport-5.svg" alt=""></a>
+          <a href="https://www.instagram.com/apple/" target="_blank"><img class="me-2" src="./image/svgexport-6.svg"
+              alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

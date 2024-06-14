@@ -1,0 +1,116 @@
+body{
+  font-family:"roboto";
+  p{
+    margin:0;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
+
+.row{
+  .left-page{
+    background: #00c3ff; 
+    background: -webkit-linear-gradient(to right, #00c3ff, #ffff1c); 
+    background: linear-gradient(to left, #00c3ff, #ffff1c);
+  }
+  .right-page{
+    background: #00c3ff; 
+    background: -webkit-linear-gradient(to right, #5433ff, #20bdff, #a5fecb); 
+    background: linear-gradient(to left, #5433ff, #20bdff, #a5fecb);
+  }
+}
+
+.row{
+  h1{
+    background: linear-gradient(to right,#009fff 13%, #ec2f4b 30%,#f5af19 100%);
+    color:transparent;
+    background-clip: text;
+  }
+}
+
+
+.media{
+  width:50%;
+  position: absolute;
+  left:25%;
+  transform: translate(-25%,0);
+  bottom:2%;
+  a{
+    i{
+      font-size:25px;
+      color:black;
+      margin-right:15px;
+    }
+  }
+}
+
+
+.slogan{
+  position: absolute;
+  left:2%;
+  top:50%;
+  transform: translate(0,-50%);
+}
+
+
+
+.input-box{
+  width:50%;
+}
+
+.login{
+  width:50%;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(0%,-50%);
+  .bi-eye-slash-fill{
+    left:92%;
+    top: 52%;
+    cursor:pointer;
+  }
+
+  .bi-eye-fill{
+    left:92%;
+    top: 52%;
+    cursor:pointer;
+  }
+}
+
+@media(max-width:992px){
+  .input-box{
+    width:100%;
+  }
+  .login{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    .bi-eye-slash-fill{
+      left:90%;
+      top: 52%;
+      cursor:pointer;
+    }
+  
+    .bi-eye-fill{
+      left:90%;
+      top: 52%;
+      cursor:pointer;
+    }
+  }
+
+  .media{
+    position: absolute;
+    left:25%;
+    bottom:5%;
+    transform: translate(0%,0%);
+  }
+}
+
+@media(max-width:576px){
+  .login{
+    width:80%;
+  }
+}
