@@ -8,21 +8,21 @@ let imgElement = document.querySelector(".airpod-max");
 
 
 grayElement.addEventListener("click",function(){
-  imgElement.src = "./image/product-list/airpods-max-spacegray.png"
+  imgElement.src = "./shoppingCart/image/product-list/airpods-max-spacegray.png"
 })
 
 pinkElement.addEventListener("click",function(){
-  imgElement.src = "./image/product-list/airpods-max-pink.png"
+  imgElement.src = "./shoppingCart/image/product-list/airpods-max-pink.png"
 })
 
 greenElement.addEventListener("click",function(){
-  imgElement.src = "./image/product-list/airpods-max-green.png"
+  imgElement.src = "./shoppingCart/image/product-list/airpods-max-green.png"
 })
 
 silverElement.addEventListener("click",function(){
-  imgElement.src = "./image/product-list/airpods-max-silver.png"
+  imgElement.src = "./shoppingCart/image/product-list/airpods-max-silver.png"
 })
 
 skyblueElement.addEventListener("click",function(){
-  imgElement.src = "./image/product-list/airpods-max-skyblue.png"
+  imgElement.src = "./shoppingCart/image/product-list/airpods-max-skyblue.png"
 })
