@@ -44,7 +44,7 @@ main .container .six-card .card {
 main .container .product-list button {
   border: none;
 }
-main .container .product-list .space-gray {
+main .container .product-list .spacegray {
   width: 25px;
   height: 25px;
   background: linear-gradient(180deg, #3D3D3A, #3D3D3A 50%, #595759 51%);
@@ -68,7 +68,7 @@ main .container .product-list .silver {
   background: linear-gradient(180deg, #F5F4F0, #F5F4F0 50%, #D2D3D4 51%);
   border-radius: 50%;
 }
-main .container .product-list .sky-blue {
+main .container .product-list .skyblue {
   width: 25px;
   height: 25px;
   background: linear-gradient(180deg, #2F506C, #2F506C 50%, #91A6BB 51%);

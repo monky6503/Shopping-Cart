@@ -14,6 +14,8 @@ body{
   }
 }
 
+
+
 main{
   .container{
     .row{
@@ -58,7 +60,7 @@ main{
       button{
         border:none;
       }
-      .space-gray{
+      .spacegray{
         width: 25px;
         height: 25px;
         background: linear-gradient( 180deg, #3D3D3A, #3D3D3A 50%, #595759 51%); 
@@ -82,7 +84,7 @@ main{
         background: linear-gradient( 180deg, #F5F4F0, #F5F4F0 50%, #D2D3D4 51% ); 
         border-radius: 50%;
       }
-      .sky-blue{
+      .skyblue{
         width: 25px;
         height: 25px;
         background: linear-gradient( 180deg, #2F506C, #2F506C 50%, #91A6BB 51% ); 
