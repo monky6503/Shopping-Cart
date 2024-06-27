@@ -140,7 +140,7 @@
             </div>
             <div class="col-6 total d-flex align-items-center justify-content-end gap-4">
               <p>x 1</p>
-              <p class="m-0">NT$54,900</p>
+              <p class="m-0 item" name="mbp" data-price="54900">NT$54,900</p>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
             </div>
             <div class="col-6 total d-flex align-items-center justify-content-end gap-4">
               <p>x 1</p>
-              <p class="m-0">NT$34,900</p>
+              <p class="m-0 item" name="ipp" data-price="34900">NT$34,900</p>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@
             </div>
             <div class="col-6 total d-flex align-items-center justify-content-end gap-4">
               <p>x 1</p>
-              <p class="m-0">NT$36,900</p>
+              <p class="m-0 item" name="ip_15p" data-price="36900">NT$36,900</p>
             </div>
           </div>
         </div>
@@ -202,11 +202,11 @@
       <div class="row px-0 m-0 pt-4 d-flex flex-column align-items-end">
         <div class="d-flex col col-md-4 col-lg-3 col-xl-2 justify-content-between mb-2">
           <span>數量：</span>
-          <p class="fw-normal">3</p>
+          <p class="fw-normal js-count">3</p>
         </div>
         <div class="d-flex col col-md-4 col-lg-3 col-xl-2 justify-content-between mb-2">
           <span>小計：</span>
-          <p class="fw-normal">NT$126,700</p>
+          <p class="fw-normal js-amount">NT$126,700</p>
         </div>
         <div class="d-flex col col-md-4 col-lg-3 col-xl-2 justify-content-between mb-2">
           <span>運費：</span>
@@ -214,7 +214,7 @@
         </div>
         <div class="d-flex col col-md-4 col-lg-3 col-xl-2 justify-content-between pb-4">
           <span>總計：</span>
-          <p class="fw-bold">NT$126,700</p>
+          <p class="fw-bold js-total">NT$126,700</p>
         </div>
         <hr class="text-body-tertiary m-0">
       </div>
@@ -362,6 +362,29 @@
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+  <script>
+
+    const products = document.querySelectorAll(".item");
+
+
+
+    products.forEach(product => {
+      let name = product.getAttribute("name");
+      let price = parseInt(product.getAttribute('data-price'));
+      let count = JSON.parse(localStorage.getItem("Items"))[product.getAttribute("name")];
+      product.previousElementSibling.innerHTML = `x ${count}`
+
+      let total = price * count
+      product.innerHTML = `NT$${(total).toLocaleString()}`;
+    })
+
+
+    let cartQuantity = parseInt(JSON.parse(localStorage.getItem("Count")));
+    let totalAmount = parseInt(JSON.parse(localStorage.getItem("Total")));
+    document.querySelector(".js-count").innerHTML = `${cartQuantity}`;
+    document.querySelector(".js-amount").innerHTML = `NT$${(totalAmount).toLocaleString()}`;
+    document.querySelector(".js-total").innerHTML = `NT$${(totalAmount).toLocaleString()}`;
+  </script>
 </body>
 
 </html>
