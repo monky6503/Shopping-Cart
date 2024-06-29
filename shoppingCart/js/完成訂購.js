@@ -18,7 +18,6 @@ document.querySelector(".js-total").innerHTML = `NT$${(totalAmount).toLocaleStri
 
 
 const infos = JSON.parse(localStorage.getItem("Info"));
-console.log(infos);
 
 document.querySelector(".buyer").innerHTML = `${infos["buyer"]}`;
 document.querySelector(".phone").innerHTML = `${infos["phone"]}`;
