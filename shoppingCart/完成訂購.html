@@ -183,19 +183,19 @@
         <h4 class="fw-normal">收貨人資訊</h4>
         <div class="d-flex col justify-content-start py-2 mb-2">
           <span class="flex-shrink-0">姓名：</span>
-          <p>Tim Cook</p>
+          <p class="buyer"></p>
         </div>
         <div class="d-flex col justify-content-start py-2 mb-2">
           <span class="flex-shrink-0">電話：</span>
-          <p>+1 408-996-1010</p>
+          <p class="phone"></p>
         </div>
         <div class="d-flex col justify-content-start py-2 mb-2">
           <span class="flex-shrink-0">E-mail：</span>
-          <p>tcook@apple.com</p>
+          <p class="mail"></p>
         </div>
         <div class="d-flex col justify-content-start py-2 mb-2">
           <span class="flex-shrink-0">地址：</span>
-          <p>10500 N De Anza Blvd, Cupertino, CA 95014美國</p>
+          <p class="address"></p>
         </div>
         <hr class="text-body-tertiary m-0">
       </div>
@@ -362,28 +362,7 @@
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-  <script>
-
-    const products = document.querySelectorAll(".item");
-
-
-
-    products.forEach(product => {
-      let name = product.getAttribute("name");
-      let price = parseInt(product.getAttribute('data-price'));
-      let count = JSON.parse(localStorage.getItem("Items"))[product.getAttribute("name")];
-      product.previousElementSibling.innerHTML = `x ${count}`
-
-      let total = price * count
-      product.innerHTML = `NT$${(total).toLocaleString()}`;
-    })
-
-
-    let cartQuantity = parseInt(JSON.parse(localStorage.getItem("Count")));
-    let totalAmount = parseInt(JSON.parse(localStorage.getItem("Total")));
-    document.querySelector(".js-count").innerHTML = `${cartQuantity}`;
-    document.querySelector(".js-amount").innerHTML = `NT$${(totalAmount).toLocaleString()}`;
-    document.querySelector(".js-total").innerHTML = `NT$${(totalAmount).toLocaleString()}`;
+  <script src="./js/完成訂購.js">
   </script>
 </body>
 

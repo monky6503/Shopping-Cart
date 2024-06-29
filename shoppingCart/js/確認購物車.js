@@ -4,7 +4,7 @@ const items = JSON.parse(localStorage.getItem("Items"));
 if(items){
   document.querySelectorAll('.js-input').forEach(input => {
     let name = input.nextElementSibling.nextElementSibling.getAttribute("name");
-    input.value = items[name];
+    input.value = items[name] ||0;
 });
 }
 
@@ -14,7 +14,7 @@ function updateCartQuantity(){
   const inputObject = document.querySelectorAll(".js-input");
   let cartQuantity = 0;
   let totalAmount = 0;
-  let items = {mbp:0,ipp:0,ip_15p:0};
+  let items = {};
 
   inputObject.forEach(input =>{
     const quantity = parseInt(input.value);
@@ -22,6 +22,9 @@ function updateCartQuantity(){
     let name = priceElement.getAttribute("name")
     const price = parseInt(priceElement.getAttribute('data-price'));
 
+    if(!items[name]){
+      items[name] = 0;
+    }
     items[name] +=quantity;
     cartQuantity+=quantity;
 
