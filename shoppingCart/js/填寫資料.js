@@ -1,8 +1,8 @@
 let cartQuantity = parseInt(JSON.parse(localStorage.getItem("Count")));
 let totalAmount = parseInt(JSON.parse(localStorage.getItem("Total")));
 document.querySelector(".js-count").innerHTML = `${cartQuantity}`;
-document.querySelector(".js-amount").innerHTML = `NT$${(totalAmount).toLocaleString()}`;
-document.querySelector(".js-total").innerHTML = `NT$${(totalAmount).toLocaleString()}`;
+document.querySelector(".js-amount").innerHTML = `$${(totalAmount).toLocaleString()}`;
+document.querySelector(".js-total").innerHTML = `$${(totalAmount).toLocaleString()}`;
 
 
 
